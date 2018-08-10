@@ -205,7 +205,6 @@ data$rfm <- (1/3)*data$recency.rfm+(1/3)*data$frequency.rfm+(1/3)*data$monetary.
 
 
 
-
 # Drop rest of irrelevant variables
 for (i in c("recency.rfm", "frequency.rfm", "monetary.rfm", "frequency.per.month", 
             "recency.in.months", "monetary.per.month")){

@@ -48,7 +48,7 @@ lines(1:11, sil_width)
 
 # PAM-algorithm 
 
-pam_fit <- pam(gower_dist, diss = TRUE, k = 8)
+pam_fit <- pam(gower_dist, diss = TRUE, k = 8) # run algorithm
 
 pam_results <-  sample%>%
   dplyr::select(-ID) %>%
@@ -56,7 +56,7 @@ pam_results <-  sample%>%
   group_by(cluster) %>%
   do(the_summary = summary(.))
 
-pam_results$the_summary
+pam_results$the_summary # summary statistics of results
 
 sample[pam_fit$medoids, ]
 
@@ -74,24 +74,23 @@ ggplot(aes(x = X, y = Y), data = tsne_data) +
 
 
 # K-modes algorithm 
-cl <- kmodes(sample[, -1], 8)
-plot(sample[, -1],col= cl$cluster)
+cl <- kmodes(sample[, -1], 8) # run algorithm
+plot(sample[, -1],col= cl$cluster) # plot results
 
 hclust(gower_dist)
-
-# Cluster visualization
 
 ########################### Hierarchical clustering ###########################
 # Divisive clustering 
 divisive.clust <- diana(as.matrix(gower_dist), 
-                        diss = TRUE, keep.diss = TRUE)
-plot(divisive.clust, main = "Divisive")
-
+                        diss = TRUE, keep.diss = TRUE) # run algorithm
+plot(divisive.clust, 
+     main = "Divisive") # plot results
+rect.hclust(divisive.clust, k = 8, border = "red")
 
 # Agglomerative clustering 
-aggl.clust.c <- hclust(gower_dist, method = "complete")
+aggl.clust.c <- hclust(gower_dist, method = "complete") # run algorithm
 plot(aggl.clust.c,
-     main = "Agglomerative, complete linkages")
+     main = "Agglomerative, complete linkages") # plot results
 rect.hclust(aggl.clust.c, k = 8, border = "red")
 d2 <- color_branches(aggl.clust.c,k=8) # auto-coloring 5 clusters of branches.
 plot(d2)
@@ -101,19 +100,12 @@ plot(d2)
 
 # DBSCAN
 
-# Find eps
 windows()
 layout(matrix(1:2, nrow=1))
 plot(density(na.omit(gower_dist[upper.tri(gower_dist)])), main="kernel density")
-plot(ecdf(gower_dist[upper.tri(gower_dist)]), main="ECDF")
+plot(ecdf(gower_dist[upper.tri(gower_dist)]), main="ECDF") # Find eps
 
-# DBSCAN algorithm
-sb <- dbscan(gower_dist, eps = .2, MinPts = 5, method="dist")
-
-# Cluster visualization
-
-
-################################# Comparison ##################################
+sb <- dbscan(gower_dist, eps = .15, MinPts = 50, method="dist") # run algorithm
 
 
 
