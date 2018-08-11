@@ -1,0 +1,11 @@
+Name of Quantlet:  Clustering
+ 
+Published in:      Statistical Programming Languages
+  
+Description:       'A Study of Various Clustering Algorithms Based on An Online Retailer'
+ 
+Keywords:          Cluster, cluster techniques
+
+Author:            Nikolaus Grefe, Artsem Nikifarau, Xiaolin Qin, Yumei Tang, Qiong Wu
+  
+Submitted:         Aug 12.2018
