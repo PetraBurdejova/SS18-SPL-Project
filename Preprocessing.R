@@ -55,7 +55,6 @@ for (i in c("delivery_date", "return", "item_size", "item_color",
 ############################## Create new variables ##############################
 # Age variable (in years), based on variable "user_dob"
 data$user_dob <- as.Date(as.character(data$user_dob))
-# ? converted to NA
 
 # Check for anomalous values 
 describe(data$user_dob)
