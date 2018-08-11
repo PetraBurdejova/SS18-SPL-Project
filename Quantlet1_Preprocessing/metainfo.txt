@@ -1,0 +1,12 @@
+
+Name of Quantlet:  Preprocessing
+ 
+Published in:      Statistical Programming Languages - SS2018
+  
+Description:       'A Study of Various Clustering Algorithms Based on An Online Retailer'
+ 
+Keywords:          clustering,anomalous values, comparison of different clustering techniques
+
+Author:            Nikolaus Grefe, Artsem Nikifarau, Xiaolin Qin, Yumei Tang, Qiong Wu
+  
+Submitted:         Aug 12.2018
