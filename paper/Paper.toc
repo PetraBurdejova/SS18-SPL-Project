@@ -1,0 +1,30 @@
+\select@language {english}
+\contentsline {section}{List of Tables}{ii}{Doc-Start}
+\contentsline {section}{List of Figures}{ii}{Doc-Start}
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}
+\contentsline {section}{\numberline {2}Definition and Theory}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}RFM}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Clustering}{3}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Partitioning Algorithms}{3}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Hierarchy Algorithms}{6}{subsubsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.3}Density-based Spatial Clustering of Applications with Noise (DBSCAN)}{6}{subsubsection.2.2.3}
+\contentsline {section}{\numberline {3}Implementation and Empirical Study}{8}{section.3}
+\contentsline {subsection}{\numberline {3.1}Motivation}{8}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Data Preprocessing}{8}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Ridding Irrelevant Variables}{8}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Creating Age Variable}{9}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}Creating Gender Variable}{9}{subsubsection.3.2.3}
+\contentsline {subsubsection}{\numberline {3.2.4}Creating Customer Loyalty Variable}{9}{subsubsection.3.2.4}
+\contentsline {subsubsection}{\numberline {3.2.5}Creating Frequency Variable Based on Customer ID}{10}{subsubsection.3.2.5}
+\contentsline {subsubsection}{\numberline {3.2.6}Creating Recency of Last Order Variable}{11}{subsubsection.3.2.6}
+\contentsline {subsubsection}{\numberline {3.2.7}Putting Everyting Together}{12}{subsubsection.3.2.7}
+\contentsline {subsubsection}{\numberline {3.2.8}Creation of RFM}{12}{subsubsection.3.2.8}
+\contentsline {subsubsection}{\numberline {3.2.9}Last Minor Changes}{13}{subsubsection.3.2.9}
+\contentsline {subsection}{\numberline {3.3}Clustering Techniques}{13}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Distance/Dissimilarity Matrix}{13}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Determining number of clusters }{14}{subsubsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.3}Partitioning Clustering}{15}{subsubsection.3.3.3}
+\contentsline {subsubsection}{\numberline {3.3.4}Hierarchical Clustering}{17}{subsubsection.3.3.4}
+\contentsline {subsubsection}{\numberline {3.3.5}Density-Based Clustering-DBSCAN Algorithm}{18}{subsubsection.3.3.5}
+\contentsline {section}{\numberline {4}Evaluation of different techniques }{19}{section.4}
+\contentsline {section}{\numberline {5}Conclusion}{23}{section.5}
