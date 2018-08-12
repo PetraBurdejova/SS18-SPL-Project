@@ -34,11 +34,13 @@ library(dbscan) # density based clustering
 library(fpc)
 library(factoextra)
 ############################## Load relevant data ##############################
+if(!file.exists("rawdata.csv")){
+  print("Please download the data file from the same folder, and put in working directory.")
+}
+
 # Clear environment
 remove(list = ls())
 
-# Load data
-setwd("/Users/Tangyumei/Desktop/")
 
 # Rename data
 data = read.csv("rawdata.csv", stringsAsFactors = FALSE)
